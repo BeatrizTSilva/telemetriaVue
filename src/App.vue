@@ -3,7 +3,7 @@
     <div class="top">
       <div class="container-center">
         <div id="clockbox">
-          <!--script src="clock.js"></script-->
+          <!--script src="./assets/clock.js"></script-->
         </div>
         <h1>Header here</h1>
       </div>
@@ -17,6 +17,8 @@
 
 <script>
 import Main from './components/Main.vue'
+import clock_func from './assets/clock.js'
+
 
 export default {
   name: 'App',
