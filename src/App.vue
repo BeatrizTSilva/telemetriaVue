@@ -1,22 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="header">
+      <div id="clockbox">
+
+      </div>
+      
+    </div>
+    <!--img id="logo" src="./assets/rover.ico"-->
+    <Main_file />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Main_file from '@/components/Main_file.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Main_file
   }
 }
 </script>
 
 <style>
+/* Aplica-se a tudo */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
