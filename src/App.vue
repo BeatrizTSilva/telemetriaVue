@@ -4,6 +4,7 @@
       <div class="container-center">
         <div id="clockbox">
           <!--script src="./assets/clock.js"></script-->
+          <!-- not linked to the file of the clock. it should not be here because this is a <template> -->
         </div>
         <h1>Header here</h1>
       </div>
@@ -17,8 +18,8 @@
 
 <script>
 import Main from './components/Main.vue'
-import clock_func from './assets/clock.js'
-
+//import clock_func from './assets/clock.js' /* not working */
+//clock_func();
 
 export default {
   name: 'App',
