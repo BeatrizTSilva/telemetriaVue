@@ -1,17 +1,14 @@
 <template>
   <div id="app">
-    <!--div id="top">
-        <p>should be in the header</p>
-    </div-->
-    <div id="header">
-      <div id="clockbox">
-        <!--script src="clock.js"></script-->
-        <p>clockbox</p>
+    <div class="top">
+      <div class="container-center">
+        <div id="clockbox">
+          <script src="clock.js"></script>
+        </div>
+        <h1>Header here</h1>
       </div>
-	  </div>
-    <div class="container-center">
       <p id="github_code">
-        code here <a href="https://github.com/pisar-relva/telemetriaVue">GitHub</a>
+        Code <a href="https://github.com/pisar-relva/telemetriaVue">here</a>
       </p>
     </div>
     <Main />
@@ -24,9 +21,9 @@ import Main from './components/Main.vue'
 export default {
   name: 'App',
   components: {
-    Main
-  }
-}
+    Main,
+  },
+};
 </script>
 
 <style>
@@ -36,15 +33,20 @@ export default {
   margin: 0;
   font-family:Klavika Basic;
 }
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-/* contains container-center */
+/* header */
 .top {
   background-color: #009de0;
-  font-size: 14px;
+  box-shadow:0px 5px 5px #D3D3D3;	
+  font-size: 15px;
   display: flex;
 }
 
-/* center */
+/* "body" */
 .container-center {
   display: flex;
   height: auto;
@@ -52,44 +54,25 @@ export default {
   margin: auto;
 }
 
-/* blue header and clock */
-#header{
-	padding:5.75px; text-align:center; background:#009de0; width:100%; font-size:15px;
-	font-family:verdana; color:white; box-shadow:0px 5px 5px #D3D3D3;	
+/* h1 in header */
+.top h1 {
+    margin: 5px;
+    color: white;
+    font-size: 2.5em;
 }
-
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/*#app {
-  border:2px; font-family:Klavika Basic; margin:0px;
-	background-color:white; color:#46555f;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}*/
 
 /* for the letters */
 #github_code {
   float: right;
-  color: black;
-  font-weight: bold;
-}
- /* for the link */
-#github_code a {
-  color: black;
+  color: white;
+  /*font-weight: bold;*/
+  font-size: 13px;
+  margin: 5px;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  padding: 0.5rem 1rem;
-  width: 100%;
-  font-size: 0.7rem;
-  background-color: #009de0;
+ /* for the link */
+#github_code a {
+  color: white;
 }
 
 </style>
