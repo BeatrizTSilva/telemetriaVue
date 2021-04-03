@@ -1,0 +1,7 @@
+/* for the whole things */
+#body {
+	text-align: center;
+	margin: 1rem auto;
+	padding: 1rem;
+	max-width: 750px;
+}
