@@ -1,6 +1,6 @@
-### Steps
+# Steps
 - Install **node.js** [https://nodejs.org/en/download/](https://nodejs.org/en/)
-- Confirmar a instalação através do terminal correndo os comandos:
+- Make sure it went ok through:
 ```bash
 $ node -v
 $ npm -v
@@ -10,7 +10,7 @@ $ npm -v
 $ npm i -g @vue/cli @vue/cli-service-global
 ```
 ### Inside VSCode
-VSCode terminal (ws is the folder where the project is)
+VSCode terminal (ws is the folder where you want the project to be)
 ```c
 $ vue create ws 
 ```
