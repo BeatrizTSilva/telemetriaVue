@@ -21,6 +21,8 @@ $ cd ws // folder we are working on
 $ npm run serve // when you first start your app
 // and to compile and run the whole thing when you are done as well
 ```
+### Bugs
+When using the stopwatch you can´t hit "Reset" before stopping
 
 ## Project setup
 ```
