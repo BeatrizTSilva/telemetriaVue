@@ -5,8 +5,11 @@
       <p id="elapsedTime">{{formattedElapsedTime}}</p>
       <p id="state">{{state}}</p>
     </div>
-    
-    
+    <div class="buttons">
+      <button id="start-button" v-on:click="startFunction()">Start</button>
+      <button id="stop-button" v-on:click="stopFunction()">Stop</button>
+      <button id="reset-button" v-on:click="resetFunction()">Reset</button>
+    </div>
     <h2> second header in Main.vue </h2>
     <!--ol>
       <li v-for="todo in to_dos" :key="todo.id">
@@ -24,9 +27,7 @@
     </ol-->
 
     
-    <button id="start-button" v-on:click="startFunction()">Start</button>
-    <button id="stop-button" v-on:click="stopFunction()">Stop</button>
-    <button id="reset-button" v-on:click="resetFunction()">Reset</button>
+    
 
   </div>
 </template>

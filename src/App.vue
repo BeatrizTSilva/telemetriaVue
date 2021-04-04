@@ -5,11 +5,13 @@
       <div class="container-center">
         <p id="clock">{{time}}</p> 
       </div>
+    </div>
+    <Main />
+    <footer>
       <p id="github_code">
         Code <a href="https://github.com/pisar-relva/telemetriaVue" target="_blank" rel="noopenernoreferrer">here</a>
       </p>
-    </div>
-    <Main />
+    </footer>
   </div>
 </template>
 
