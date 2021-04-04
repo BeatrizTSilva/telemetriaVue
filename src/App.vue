@@ -5,6 +5,7 @@
         <!--div id="clockbox">
           <p>clockbox in app.vue</p>
         </div-->
+        <img id="psem-logo" src="../public/psem-car-white.png" />
         <h1>Header here in App.vue</h1>
       </div>
       <p id="github_code">

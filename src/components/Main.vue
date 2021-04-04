@@ -1,5 +1,8 @@
 <template>
   <div id="big-container">
+    <div id="logo">
+      
+    </div>
     <!--div id="header">
       <div id="clockbox">
         <h2> second header </h2>

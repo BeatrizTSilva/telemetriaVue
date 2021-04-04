@@ -50,3 +50,15 @@
   #github_code a {
     color: white;
   }
+
+  /* logo in the header */
+  #psem-logo {
+    display: block;
+    width: 7%;
+    /*margin: 0 auto;*/
+    float: left;
+    margin-left:8px;
+    margin-top:7px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
