@@ -10,7 +10,7 @@
     </div-->
     <h2> second header in Main.vue </h2>
     <ol>
-      <li v-for="todo in todos" :key="todo.id">
+      <li v-for="todo in to_dos" :key="todo.id">
         {{todo.text}}
       </li>
     </ol>
@@ -25,6 +25,10 @@
         <span>else condition</span>
       </li>
     </ol>
+
+    <h1> {{msg}} </h1>
+    <button v-on:click="testFun">call function</button>
+
   </div>
 </template>
 
@@ -34,12 +38,15 @@ export default {
   // "data()" guarda variáveis de estado
   data() {
 		return {
-			todos: [{text:'vue js'} , {text:'react js'}, {text:'angular'}],
-      show:false
+			to_dos: [{text:'vue js'} , {text:'react js'}, {text:'angular'}],
+      show:false,
+      msg:"how to use a function"
 		};
 	},
-  props: {
-    msg: String,
+  methods:{
+    testFun:function(){
+      this.msg="function call"
+    }
   }
 }
 </script>
