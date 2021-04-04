@@ -3,6 +3,7 @@
     <div class="top">
       <div class="container-center">
         <div id="clockbox">
+          <Main msg = "from app.vue" />
           <!--script src="./assets/clock.js"></script-->
           <!-- not linked to the file of the clock. it should not be here because this is a <template> -->
         </div>

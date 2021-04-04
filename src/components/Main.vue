@@ -1,7 +1,17 @@
 <template>
-  <div id="body">
-    <p>in id=body</p>
+  <div id="big-container">
+    <div id="header">
+      <div id="clockbox">
+        <!--h2> {{msg}} </h2-->
+        <h2> second header </h2>
+      </div>
+    </div>
+    <div id="something">
+      <p>in id=body</p>
+    </div>
   </div>
+  
+  
 </template>
 
 <script>
@@ -20,7 +30,7 @@ export default {
 		};
 	},
   props: {
-    msg: String
+    msg: String,
   }
 }
 </script>
