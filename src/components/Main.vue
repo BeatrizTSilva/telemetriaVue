@@ -9,14 +9,16 @@
       <p>in id=body</p>
     </div-->
     <!--ToggleButton /-->
+    <p id="state">{{state}}</p>
+    <p id="elapsedTime">{{formattedElapsedTime}}</p>
+    
+    
     <h2> second header in Main.vue </h2>
     <ol>
       <li v-for="todo in to_dos" :key="todo.id">
         {{todo.text}}
       </li>
     </ol>
-    
-    <br>
 
     <ol>
       <li v-if="show">
@@ -27,10 +29,10 @@
       </li>
     </ol>
 
-    <h1> {{start}} </h1> <p>{{formattedElapsedTime}}</p>
+    
     <button id="start-button" v-on:click="startFunction()">Start</button>
     <button id="stop-button" v-on:click="stopFunction()">Stop</button>
-    <button id="start-quiz" @click.prevent="startQuiz(false)">Start Quiz</button>
+    <button id="reset-button" v-on:click="resetFunction()">Reset</button>
 
   </div>
 </template>
@@ -48,11 +50,12 @@ export default {
 		return {
 			to_dos: [{text:'vue js'} , {text:'react js'}, {text:'angular'}],
       show:false,
-      start:0,
+      state:"Waiting...",
       elapsedTime:0,
 		};
 	},
   computed: {
+    /* for counter clock */
     formattedElapsedTime() {
       const date = new Date(null);
       date.setSeconds(this.elapsedTime / 1000);
@@ -61,45 +64,27 @@ export default {
     }
   },
   methods:{
-    reset() {
-      this.elapsedTime = 0;
-    },
     /* start graphs etc */ 
-    startFunction:function(){this.start=1;
+    startFunction:function(){
+      this.state="Started";
       this.timer = setInterval(() => {
           this.elapsedTime += 1000;
         }, 1000);
     },
     /* stop graphs etc */
     stopFunction:function(){
-      this.start=0;
+      this.state="Stopped";
       clearInterval(this.timer);
     },
-
-
-    countDownTimer() {
-			document.getElementById("timer").innerHTML =
-				"Time remaining: " + this.timer;
-			let interval = setInterval(() => {
-				this.timer--;
-				if (this.timer <= 0 || !this.playing) {
-					this.timer = 0;
-					document.getElementById("quiz").hidden = true;
-					document.getElementById("score").hidden = false;
-					document.getElementById("score").innerHTML =
-					clearInterval(interval);
-				}
-				document.getElementById("count-down-timer").innerHTML =
-					"Time remaining: " + this.timer;
-			}, 1000);
-		},
-
-
+    /* reset graphs etc */
+    resetFunction() {
+      this.state="Reset";
+      this.elapsedTime = 0;
+    },
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   @import '../assets/styles_main.css';
 </style>
