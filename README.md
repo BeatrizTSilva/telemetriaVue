@@ -24,9 +24,7 @@ $ npm run serve // when you first start your app
 
 ## Project setup
 ```
-npm install
-
-npm run serve
-
-npm run build
+$ npm install
+$ npm run serve
+$ npm run build
 ```
