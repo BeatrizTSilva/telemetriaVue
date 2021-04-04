@@ -7,6 +7,7 @@
       </div>
     </div>
     <Main />
+    <Home data="Hello from App.vue" message = "some message" />
     <footer>
       <p id="github_code">
         Code <a href="https://github.com/pisar-relva/telemetriaVue" target="_blank" rel="noopenernoreferrer">here</a>
@@ -17,18 +18,19 @@
 
 <script>
 import Main from './components/Main.vue'
+import Home from './components/Home.vue'
 
 export default {
   name: 'App',
   components: {
-    Main, 
+    Main,
+    Home, 
   },
   data() {
     return {
       /* for clock -> id="clock" */
       interval: null,
       time: null,
-      site: "vue learning", /* for header/footer thing */
     };
   },
   /* prevent memory leak */
