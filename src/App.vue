@@ -18,19 +18,12 @@
 
 <script>
 import Main from './components/Main.vue'
-//import clock_func from './assets/clock.js' /* not working */
-//clock_func();
 
 export default {
   name: 'App',
   components: {
-    Main,
+    Main, 
   },
-  methods:{
-    clock:function(){
-      
-    }
-  }
 };
 </script>
 
