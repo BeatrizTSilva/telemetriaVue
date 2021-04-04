@@ -12,6 +12,7 @@
   /* header */
   .top {
     background-color: #009de0;
+    /*background-color: #03da88;*/
     box-shadow:0px 5px 5px #D3D3D3;	
     font-size: 15px;
     display: flex;
@@ -42,7 +43,7 @@
     float: right;
     color: white;
     /*font-weight: bold;*/
-    font-size: 13px;
+    font-size: 15px;
     margin: 5px;
   }
   
