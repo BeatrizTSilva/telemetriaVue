@@ -22,8 +22,9 @@ $ npm run serve // to run
 ### Bugs
 When using the stopwatch if you hit "Reset" it will keep counting but from 0
 
-## CSS
+### CSS
 font-family: Klavika Basic;
+
 background-color: #009de0;
 
 

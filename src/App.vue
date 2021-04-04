@@ -28,6 +28,7 @@ export default {
       /* for clock -> id="clock" */
       interval: null,
       time: null,
+      site: "vue learning", /* for header/footer thing */
     };
   },
   /* prevent memory leak */
