@@ -1,14 +1,25 @@
 <template>
   <div id="big-container">
-    <div id="header">
+    <!--div id="header">
       <div id="clockbox">
-        <!--h2> {{msg}} </h2-->
         <h2> second header </h2>
       </div>
-    </div>
-    <div id="something">
+    </div-->
+    <!--div id="something">
       <p>in id=body</p>
-    </div>
+    </div-->
+
+    <h2> second header in Main.vue </h2>
+    <!--ol>
+      <li v-for="todo in todos" :key="todo.id">
+        {{todo}}
+
+      </li>
+    </ol-->
+
+
+
+
   </div>
   
   
@@ -20,13 +31,7 @@ export default {
   // "data()" guarda variáveis de estado
   data() {
 		return {
-			customQuiz: [],
-			questions: [],
-			loading: true,
-			playing: true,
-			index: 0,
-			score: 0,
-			timer: 10,
+			todos: ['vue js', 'react js', 'angular']
 		};
 	},
   props: {

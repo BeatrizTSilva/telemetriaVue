@@ -2,12 +2,10 @@
   <div id="app">
     <div class="top">
       <div class="container-center">
-        <div id="clockbox">
-          <Main msg = "from app.vue" />
-          <!--script src="./assets/clock.js"></script-->
-          <!-- not linked to the file of the clock. it should not be here because this is a <template> -->
-        </div>
-        <h1>Header here</h1>
+        <!--div id="clockbox">
+          <p>clockbox in app.vue</p>
+        </div-->
+        <h1>Header here in App.vue</h1>
       </div>
       <p id="github_code">
         Code <a href="https://github.com/pisar-relva/telemetriaVue" target="_blank" rel="noopener noreferrer">here</a>
