@@ -6,7 +6,7 @@
 	max-width: 750px;
 }
 
-/* all buttons */
+/* all buttons -> you need to change colors, sizes etc in all of these below */
 .buttons {
 	display: flex;
 	flex-direction: row;
@@ -27,7 +27,7 @@ button {
 	cursor: pointer;
 }
 label {
-	font: 400 13.3333px Arial;
+	font: 400 13.3333px Klavika Basic;
 	font-size: 0.9rem;
 	font-weight: 700;
 	box-sizing: border-box;

@@ -27,9 +27,13 @@
     </ol>
 
     <h1> {{start}} </h1>
-    <button class="buttons" v-on:click="testFun">Start</button>
+    <button id="start-button" v-on:click="startFunction()">Start</button>
+    <button id="stop-button" v-on:click="stopFunction()">Stop</button>
+    <!--button id="other-button" @click="testFun(); testTwo()">other button</button-->
     <button id="start-quiz" @click.prevent="startQuiz(false)">Start Quiz</button>
 
+    <p>{{elapsedTime}}</p>
+    
   </div>
 </template>
 
@@ -41,13 +45,35 @@ export default {
 		return {
 			to_dos: [{text:'vue js'} , {text:'react js'}, {text:'angular'}],
       show:false,
-      start:0
+      start:0,
+      timer: 10,
 		};
 	},
   methods:{
-    testFun:function(){
-      this.start=1
-    }
+    /* start graphs etc */
+    startFunction:function(){this.start=1},
+    /* stop graphs etc */
+    stopFunction:function(){this.start=0},
+
+
+    countDownTimer() {
+			document.getElementById("timer").innerHTML =
+				"Time remaining: " + this.timer;
+			let interval = setInterval(() => {
+				this.timer--;
+				if (this.timer <= 0 || !this.playing) {
+					this.timer = 0;
+					document.getElementById("quiz").hidden = true;
+					document.getElementById("score").hidden = false;
+					document.getElementById("score").innerHTML =
+					clearInterval(interval);
+				}
+				document.getElementById("count-down-timer").innerHTML =
+					"Time remaining: " + this.timer;
+			}, 1000);
+		}
+
+
   }
 }
 </script>

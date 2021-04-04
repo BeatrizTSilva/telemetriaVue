@@ -26,6 +26,11 @@ export default {
   components: {
     Main,
   },
+  methods:{
+    clock:function(){
+      
+    }
+  }
 };
 </script>
 
