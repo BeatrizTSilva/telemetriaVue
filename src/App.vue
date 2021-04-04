@@ -41,7 +41,10 @@ export default {
       this.time = Intl.DateTimeFormat(navigator.language, {
         hour: 'numeric',
         minute: 'numeric',
-        second: 'numeric'
+        second: 'numeric',
+        month: 'numeric',
+        day: 'numeric',
+        year: 'numeric'
       }).format()
     }, 1000)
   }
