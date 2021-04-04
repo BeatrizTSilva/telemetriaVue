@@ -3,11 +3,7 @@
     <div class="top">
       <img id="psem-logo" src="../public/psem-car-white.png" />
       <div class="container-center">
-        <div id="clockbox">
-          <p id="p_clock">clockbox in app.vue</p>
-          <Clock />
-        </div>
-        <h3>Header here in App.vue {{time}} </h3>
+        <p id="clock">{{time}}</p>
       </div>
       <p id="github_code">
         Code <a href="https://github.com/pisar-relva/telemetriaVue" target="_blank" rel="noopenernoreferrer">here</a>
