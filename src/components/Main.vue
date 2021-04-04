@@ -1,33 +1,27 @@
 <template>
   <div id="big-container">
-    <!--div id="header">
-      <div id="clockbox">
-        <h2> second header </h2>
-      </div>
-    </div-->
-    <!--div id="something">
-      <p>in id=body</p>
-    </div-->
     <!--ToggleButton /-->
-    <p id="state">{{state}}</p>
-    <p id="elapsedTime">{{formattedElapsedTime}}</p>
+    <div id=stopwatch>
+      <p id="elapsedTime">{{formattedElapsedTime}}</p>
+      <p id="state">{{state}}</p>
+    </div>
     
     
     <h2> second header in Main.vue </h2>
-    <ol>
+    <!--ol>
       <li v-for="todo in to_dos" :key="todo.id">
         {{todo.text}}
       </li>
-    </ol>
+    </ol-->
 
-    <ol>
+    <!--ol>
       <li v-if="show">
         <span>if condition</span>
       </li>
       <li v-else>
         <span>else condition</span>
       </li>
-    </ol>
+    </ol-->
 
     
     <button id="start-button" v-on:click="startFunction()">Start</button>
@@ -55,7 +49,7 @@ export default {
 		};
 	},
   computed: {
-    /* for counter clock */
+    /* for counter clock -> id="elapsedTime" */
     formattedElapsedTime() {
       const date = new Date(null);
       date.setSeconds(this.elapsedTime / 1000);
@@ -64,19 +58,19 @@ export default {
     }
   },
   methods:{
-    /* start graphs etc */ 
+    /* start graphs etc -> id="elapsedTime" */ 
     startFunction:function(){
       this.state="Started";
       this.timer = setInterval(() => {
           this.elapsedTime += 1000;
         }, 1000);
     },
-    /* stop graphs etc */
+    /* stop graphs etc -> id="elapsedTime" */
     stopFunction:function(){
       this.state="Stopped";
       clearInterval(this.timer);
     },
-    /* reset graphs etc */
+    /* reset graphs etc -> id="elapsedTime" */
     resetFunction() {
       this.state="Reset";
       this.elapsedTime = 0;
