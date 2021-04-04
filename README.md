@@ -17,8 +17,7 @@ Then choose vue 2
 
 ```c
 $ cd ws // folder we are working on
-$ npm run serve // when you first start your app and 
-to compile and run the whole thing when you are done as well 
+$ npm run serve // to run
 ```
 ### Bugs
 When using the stopwatch if you hit "Reset" it will keep counting but from 0
