@@ -64,6 +64,9 @@
     margin-right: 5px;
   }
 
+  #p_clock {
+    font-size: 15px;
+  }
   /* for the clock */
   #month, #day, #year, #hour, #minute, #second, p{ /* display of the date in the body */
     margin-left:5px; float:left; 

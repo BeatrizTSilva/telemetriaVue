@@ -3,16 +3,19 @@
     <div class="top">
       <img id="psem-logo" src="../public/psem-car-white.png" />
       <div class="container-center">
-        <!--div id="clockbox">
-          <p>clockbox in app.vue</p>
-        </div-->
-        <h3>Header here in App.vue</h3>
+        <div id="clockbox">
+          <p id="p_clock">clockbox in app.vue</p>
+          <Clock />
+        </div>
+        <h3>Header here in App.vue {{time}} </h3>
       </div>
       <p id="github_code">
         Code <a href="https://github.com/pisar-relva/telemetriaVue" target="_blank" rel="noopenernoreferrer">here</a>
       </p>
+
     </div>
-    <Main/>
+    <Main />
+    
   </div>
 </template>
 
@@ -24,6 +27,29 @@ export default {
   components: {
     Main, 
   },
+  data() {
+    return {
+      /* for clock */
+      interval: null,
+      time: null,
+    };
+  },
+   beforeDestroy() {
+    /* prevent memory leak */
+    clearInterval(this.interval)
+  },
+  created() {
+    // update the time every second
+    this.interval = setInterval(() => {
+      // Concise way to format time according to system locale.
+      this.time = Intl.DateTimeFormat(navigator.language, {
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric'
+      }).format()
+    }, 1000)
+  }
+
 };
 </script>
 
