@@ -26,8 +26,9 @@
       </li>
     </ol>
 
-    <h1> {{msg}} </h1>
-    <button v-on:click="testFun">call function</button>
+    <h1> {{start}} </h1>
+    <button class="buttons" v-on:click="testFun">Start</button>
+    <button id="start-quiz" @click.prevent="startQuiz(false)">Start Quiz</button>
 
   </div>
 </template>
@@ -40,12 +41,12 @@ export default {
 		return {
 			to_dos: [{text:'vue js'} , {text:'react js'}, {text:'angular'}],
       show:false,
-      msg:"how to use a function"
+      start:0
 		};
 	},
   methods:{
     testFun:function(){
-      this.msg="function call"
+      this.start=1
     }
   }
 }
