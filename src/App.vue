@@ -10,7 +10,7 @@
     <Home data="Hello from App.vue" message = "some message" />
     <footer>
       <p id="github_code">
-        Code <a href="https://github.com/pisar-relva/telemetriaVue" target="_blank" rel="noopenernoreferrer">here</a>
+        Code <a href="https://github.com/colher-de-pau/telemetriaVue" target="_blank" rel="noopenernoreferrer">here</a>
       </p>
     </footer>
   </div>
