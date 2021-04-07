@@ -7,6 +7,7 @@
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0.4rem;
 }
 
 /* header */
@@ -15,6 +16,11 @@
   box-shadow:0px 5px 5px #D3D3D3;	
   font-size: 0.8rem;
   display: flex;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%; /* take up the full browser width */
+  z-index:200; /* high z index so other content scrolls underneath */
 }
 
 /* for the .top (header) h1 basically */
