@@ -3,16 +3,41 @@
     <div class="top">
       <img id="psem-logo" src="../public/psem-car-white.png" />
       <div class="container-center">
-        <p id="clock">{{time}}</p> 
+        <p id="clock">{{time}}</p>
       </div>
+      <p id="github_code">
+          Code <a href="https://github.com/colher-de-pau/telemetriaVue" target="_blank" rel="noopenernoreferrer">here</a>
+      </p>
     </div>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
+    <p>HUAHSOAHSOUSHDOUAHNODUFHE</p>
     <Main />
     <Home data="Hello from App.vue" message = "some message" />
-    <footer>
-      <p id="github_code">
-        Code <a href="https://github.com/colher-de-pau/telemetriaVue" target="_blank" rel="noopenernoreferrer">here</a>
-      </p>
-    </footer>
   </div>
 </template>
 
