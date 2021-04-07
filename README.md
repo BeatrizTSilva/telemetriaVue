@@ -34,6 +34,15 @@ npm install --save pg
 npm install --save dns pg-native
 ```
 
+OR
+
+```bash
+$ npm install sequelize pg pg-hstore --save
+$ npm install sequelize-cli --save-dev
+$ ./node_modules/.bin/sequelize init
+
+```
+
 
 ## Project setup
 ```
