@@ -28,6 +28,13 @@ font-family: Klavika Basic;
 background-color: #009de0;
 ```
 
+### PostGreSQL Packages to install
+```bash
+npm install --save pg
+npm install --save dns pg-native
+```
+
+
 ## Project setup
 ```
 $ npm install
