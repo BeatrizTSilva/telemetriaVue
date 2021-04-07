@@ -29,8 +29,25 @@ background-color: #009de0;
 ```
 
 ## Project setup
-```
+```bash
 $ npm install
 $ npm run serve
 $ npm run build
+```
+
+## PG Packages
+```bash
+$ npm install sequelize pg pg-hstore --save
+$ npm install sequelize-cli --save-dev
+$ ./node_modules/.bin/sequelize init
+```
+
+Update config.json in the config folder
+https://jes.al/2018/02/getting-started-with-express-vuejs-postgresql/
+
+Then
+```bash
+$ ./node_modules/.bin/sequelize model:generate --name Visitor --attributes ip:string,user_agent:string
+$ ./node_modules/.bin/sequelize db:create -> only if you font already have a database
+$ ./node_modules/.bin/sequelize db:migrate
 ```

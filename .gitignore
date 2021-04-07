@@ -21,3 +21,10 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# PG Packages
+weird.js
+config/
+models/
+migrations/
+seeders/

@@ -34,6 +34,8 @@
 
 <script>
 //import Clock from 'components/Clock.vue' --> this path is wrong
+import './components/async_fulltable.js'
+
 export default {
   name: 'Main',
   /*components: {
