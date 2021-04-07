@@ -27,3 +27,4 @@ weird.js
 config/
 models/
 migrations/
+seeders/
