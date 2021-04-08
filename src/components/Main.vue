@@ -11,6 +11,7 @@
       <button id="reset-button" v-on:click="resetFunction()">Reset</button>
     </div>
     <h2> second header in Main.vue </h2>
+
     <!--ol>
       <li v-for="todo in to_dos" :key="todo.id">
         {{todo.text}}
@@ -34,8 +35,9 @@
 
 <script>
 
-//import Clock from 'components/Clock.vue' --> this path is wrong
-import './components/async_fulltable.js'
+//import './components/async_fulltable.js'
+
+
 export default {
   name: 'Main',
   /*components: {
@@ -77,37 +79,6 @@ export default {
     resetFunction() {
       this.state="Reset";
       this.elapsedTime = 0;
-    },
-    database_connect (){
-      const {DB} = require('./weird.js'); /* file for database parameters */
-      const {Client} = require('pg'); /* will require the library Client */
-
-      const client = new Client({ /* we need to send a json object */
-        user: DB.username,
-        host: DB.hostname,
-        password: DB.database_password,
-        port: 5432,
-        database: DB.database_name
-      })
-
-      execute()
-
-      async function execute (){ /* it will pause before going to the next method */
-          try{
-              await client.connect() /* returns a promise */
-              console.log("Connected Successfully")
-              const results = await client.query("SELECT * FROM " + DB.schema) /* you need to use await so that it doesnt execute automatically */
-              console.table(results.rows)
-          }
-          catch (ex){
-              console.log(`Something wrong happened ${ex}`)
-          }
-          finally{
-              await client.end()
-              console.log("Client disconnected successfully")
-          }
-      }
-
     },
   }
 }
