@@ -48,6 +48,6 @@ https://jes.al/2018/02/getting-started-with-express-vuejs-postgresql/
 Then
 ```bash
 $ ./node_modules/.bin/sequelize model:generate --name Visitor --attributes ip:string,user_agent:string
-$ ./node_modules/.bin/sequelize db:create -> only if you font already have a database
+$ ./node_modules/.bin/sequelize db:create -> only if you dont already have a database
 $ ./node_modules/.bin/sequelize db:migrate
 ```
