@@ -1,4 +1,4 @@
-const {DB} = require('./weird.js'); /* file for database parameters */
+const {DB} = require('../components/weird.js'); /* file for database parameters */
 const {Client} = require('pg'); /* will require the library Client */
 
 const client = new Client({ /* we need to send a json object */
